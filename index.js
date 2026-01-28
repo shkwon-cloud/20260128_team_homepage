@@ -21,35 +21,11 @@ const TEAM_MEMBERS = [
     },
     {
         id: '3',
-        name: '박민준',
+        name: '백세원',
         role: 'Frontend Engineer',
         bio: '최신 웹 기술을 탐구하고 고성능 웹 애플리케이션을 구축하는 것에 열정이 있습니다. 사용자 경험 최적화의 전문가입니다.',
-        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&h=800&q=80',
+        image: 'image/baek.jpg',
         tags: ['React', 'TypeScript', 'WebPerf']
-    },
-    {
-        id: '4',
-        name: '최서윤',
-        role: 'Product Manager',
-        bio: '복잡한 프로젝트를 조율하고 팀의 시너지를 극대화하는 커뮤니케이션의 달인입니다. 데이터 기반의 의사결정을 선호합니다.',
-        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&h=800&q=80',
-        tags: ['Agile', 'Growth', 'Data']
-    },
-    {
-        id: '5',
-        name: '정현우',
-        role: 'Backend Engineer',
-        bio: '안정적이고 확장 가능한 시스템 아키텍처를 설계합니다. 대규모 트래픽 처리에 대한 풍부한 경험을 가지고 있습니다.',
-        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&h=800&q=80',
-        tags: ['Node.js', 'Cloud', 'Scaling']
-    },
-    {
-        id: '6',
-        name: '윤아름',
-        role: 'Brand Designer',
-        bio: '브랜드의 스토리를 시각적으로 풀어내는 것에 능숙합니다. 감각적인 색채 사용과 타이포그래피가 강점입니다.',
-        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&h=800&q=80',
-        tags: ['Branding', 'Motion', 'Concept']
     }
 ];
 
