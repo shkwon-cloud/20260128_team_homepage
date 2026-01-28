@@ -5,7 +5,7 @@ import { GoogleGenAI } from "@google/genai";
 const TEAM_MEMBERS = [
     {
         id: '1',
-        name: '김태양',
+        name: '권해적',
         role: 'CEO & Founder',
         bio: '혁신적인 기술을 통해 세상을 더 나은 곳으로 만들고자 노력하는 비저너리 리더입니다. 15년 이상의 IT 경력을 보유하고 있습니다.',
         image: 'image/SoonHyun.jpg',
