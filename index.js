@@ -3,54 +3,54 @@ import { GoogleGenAI } from "@google/genai";
 
 // 1. Team Data
 const TEAM_MEMBERS = [
-  {
-    id: '1',
-    name: '김태양',
-    role: 'CEO & Founder',
-    bio: '혁신적인 기술을 통해 세상을 더 나은 곳으로 만들고자 노력하는 비저너리 리더입니다. 15년 이상의 IT 경력을 보유하고 있습니다.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=800&q=80',
-    tags: ['Strategy', 'Leadership', 'Vision']
-  },
-  {
-    id: '2',
-    name: '이지은',
-    role: 'UI/UX Designer',
-    bio: '사용자의 마음을 움직이는 인터렉티브 디자인을 추구합니다. 심미성과 기능성의 완벽한 조화를 만드는 것을 목표로 합니다.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&h=800&q=80',
-    tags: ['Figma', 'Prototyping', 'Art']
-  },
-  {
-    id: '3',
-    name: '박민준',
-    role: 'Frontend Engineer',
-    bio: '최신 웹 기술을 탐구하고 고성능 웹 애플리케이션을 구축하는 것에 열정이 있습니다. 사용자 경험 최적화의 전문가입니다.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&h=800&q=80',
-    tags: ['React', 'TypeScript', 'WebPerf']
-  },
-  {
-    id: '4',
-    name: '최서윤',
-    role: 'Product Manager',
-    bio: '복잡한 프로젝트를 조율하고 팀의 시너지를 극대화하는 커뮤니케이션의 달인입니다. 데이터 기반의 의사결정을 선호합니다.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&h=800&q=80',
-    tags: ['Agile', 'Growth', 'Data']
-  },
-  {
-    id: '5',
-    name: '정현우',
-    role: 'Backend Engineer',
-    bio: '안정적이고 확장 가능한 시스템 아키텍처를 설계합니다. 대규모 트래픽 처리에 대한 풍부한 경험을 가지고 있습니다.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&h=800&q=80',
-    tags: ['Node.js', 'Cloud', 'Scaling']
-  },
-  {
-    id: '6',
-    name: '윤아름',
-    role: 'Brand Designer',
-    bio: '브랜드의 스토리를 시각적으로 풀어내는 것에 능숙합니다. 감각적인 색채 사용과 타이포그래피가 강점입니다.',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&h=800&q=80',
-    tags: ['Branding', 'Motion', 'Concept']
-  }
+    {
+        id: '1',
+        name: '김태양',
+        role: 'CEO & Founder',
+        bio: '혁신적인 기술을 통해 세상을 더 나은 곳으로 만들고자 노력하는 비저너리 리더입니다. 15년 이상의 IT 경력을 보유하고 있습니다.',
+        image: 'image/SoonHyun.jpg',
+        tags: ['Strategy', 'Leadership', 'Vision']
+    },
+    {
+        id: '2',
+        name: '이지은',
+        role: 'UI/UX Designer',
+        bio: '사용자의 마음을 움직이는 인터렉티브 디자인을 추구합니다. 심미성과 기능성의 완벽한 조화를 만드는 것을 목표로 합니다.',
+        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&h=800&q=80',
+        tags: ['Figma', 'Prototyping', 'Art']
+    },
+    {
+        id: '3',
+        name: '박민준',
+        role: 'Frontend Engineer',
+        bio: '최신 웹 기술을 탐구하고 고성능 웹 애플리케이션을 구축하는 것에 열정이 있습니다. 사용자 경험 최적화의 전문가입니다.',
+        image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&h=800&q=80',
+        tags: ['React', 'TypeScript', 'WebPerf']
+    },
+    {
+        id: '4',
+        name: '최서윤',
+        role: 'Product Manager',
+        bio: '복잡한 프로젝트를 조율하고 팀의 시너지를 극대화하는 커뮤니케이션의 달인입니다. 데이터 기반의 의사결정을 선호합니다.',
+        image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&h=800&q=80',
+        tags: ['Agile', 'Growth', 'Data']
+    },
+    {
+        id: '5',
+        name: '정현우',
+        role: 'Backend Engineer',
+        bio: '안정적이고 확장 가능한 시스템 아키텍처를 설계합니다. 대규모 트래픽 처리에 대한 풍부한 경험을 가지고 있습니다.',
+        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&h=800&q=80',
+        tags: ['Node.js', 'Cloud', 'Scaling']
+    },
+    {
+        id: '6',
+        name: '윤아름',
+        role: 'Brand Designer',
+        bio: '브랜드의 스토리를 시각적으로 풀어내는 것에 능숙합니다. 감각적인 색채 사용과 타이포그래피가 강점입니다.',
+        image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&h=800&q=80',
+        tags: ['Branding', 'Motion', 'Concept']
+    }
 ];
 
 // 2. DOM Elements
@@ -163,9 +163,8 @@ function addMessage(role, text, isLoading = false) {
     const isUser = role === 'user';
     const msgHtml = `
         <div id="${id}" class="flex ${isUser ? 'justify-end' : 'justify-start'} animate-in fade-in slide-in-from-${isUser ? 'right' : 'left'}-2">
-            <div class="max-w-[85%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${
-                isUser ? 'bg-indigo-600 text-white rounded-br-none shadow-lg' : 'bg-indigo-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded-bl-none'
-            }">
+            <div class="max-w-[85%] px-4 py-3 rounded-2xl text-sm leading-relaxed ${isUser ? 'bg-indigo-600 text-white rounded-br-none shadow-lg' : 'bg-indigo-50 dark:bg-slate-800 text-slate-800 dark:text-slate-200 rounded-bl-none'
+        }">
                 ${text}
             </div>
         </div>
