@@ -13,10 +13,10 @@ const TEAM_MEMBERS = [
     },
     {
         id: '2',
-        name: '이지은',
+        name: '조현우',
         role: 'UI/UX Designer',
         bio: '사용자의 마음을 움직이는 인터렉티브 디자인을 추구합니다. 심미성과 기능성의 완벽한 조화를 만드는 것을 목표로 합니다.',
-        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&h=800&q=80',
+        image: 'image/hwcho.jpg',
         tags: ['Figma', 'Prototyping', 'Art']
     },
     {
