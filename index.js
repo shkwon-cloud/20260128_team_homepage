@@ -1,4 +1,6 @@
 // 백세원 만세 2
+// 권순현 Mui Bien!
+
 import { GoogleGenAI } from "@google/genai";
 
 // 1. Team Data
