@@ -1,5 +1,6 @@
 // 백세원 만세 2
 // 권순현 Mui Bien!
+// 환영합니다. 유지현님
 
 import { GoogleGenAI } from "@google/genai";
 
