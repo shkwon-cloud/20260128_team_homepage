@@ -164,6 +164,13 @@ function updateMessage(id, text) {
 }
 
 // 7. Event Listeners for Chat
+const projectInquiryBtn = document.getElementById('project-inquiry-btn');
+if (projectInquiryBtn) {
+    projectInquiryBtn.addEventListener('click', () => {
+        alert("전화: 123-5678");
+    });
+}
+
 toggleChatBtn.addEventListener('click', () => {
     chatWindow.classList.toggle('hidden');
     if (!chatWindow.classList.contains('hidden')) chatInput.focus();
