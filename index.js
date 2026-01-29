@@ -1,4 +1,4 @@
-
+// 백세원 만세
 import { GoogleGenAI } from "@google/genai";
 
 // 1. Team Data
