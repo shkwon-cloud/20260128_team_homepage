@@ -1,8 +1,0 @@
-
-{
-  "name": "Elite Team Showcase (Static)",
-  "description": "Vanilla JS와 HTML로 구현된 최고급 팀 소개 사이트입니다.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
